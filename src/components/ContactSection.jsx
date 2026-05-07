@@ -87,7 +87,7 @@ export default function ContactSection() {
   };
 
   // ============================================================
-  // REAL EMAIL SUBMIT WITH RESEND BACKEND
+  // REAL EMAIL SUBMIT WITH RESEND + VERCEL API
   // ============================================================
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -95,16 +95,13 @@ export default function ContactSection() {
     try {
       setLoading(true);
 
-      const response = await fetch(
-        'http://localhost:3001/api/contact',
-        {
-          method: 'POST',
-          headers: {
-            'Content-Type': 'application/json',
-          },
-          body: JSON.stringify(form),
-        }
-      );
+      const response = await fetch('/api/send-email', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(form),
+      });
 
       if (!response.ok) {
         throw new Error('Kunne ikke sende besked');
