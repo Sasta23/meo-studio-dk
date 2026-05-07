@@ -95,7 +95,7 @@ export default function ContactSection() {
     try {
       setLoading(true);
 
-      const response = await fetch('/api/send-email', {
+      const response = await fetch('/api/contact', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
