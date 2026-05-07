@@ -1,0 +1,83 @@
+/* PortfolioGrid.module.css */
+
+.section {
+  padding: var(--space-2xl) 0;
+}
+
+/* ---- Header ---------------------------------------------- */
+.header {
+  margin-bottom: 2.5rem;
+}
+
+.heading {
+  font-family: var(--font-serif);
+  font-size: clamp(2.4rem, 4.5vw, 3.6rem);
+  font-weight: 300;
+  line-height: 1.1;
+  color: var(--color-text);
+}
+
+.headingEm {
+  font-style: italic;
+  color: var(--color-gold);
+}
+
+/* ---- Filters --------------------------------------------- */
+.filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 3rem;
+}
+
+.filterBtn {
+  font-size: 0.7rem;
+  font-weight: 400;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  padding: 0.55rem 1.4rem;
+  border: 1px solid var(--color-border);
+  background: transparent;
+  color: var(--color-text-muted);
+  transition: border-color 0.25s, color 0.25s, background 0.25s;
+}
+
+.filterBtn:hover {
+  border-color: var(--color-border-hover);
+  color: var(--color-text);
+}
+
+.filterActive {
+  background: var(--color-gold-dim);
+  border-color: var(--color-gold-border);
+  color: var(--color-gold) !important;
+}
+
+/* ---- Masonry grid ---------------------------------------- */
+/* CSS columns give a true masonry effect */
+.grid {
+  columns: 3;
+  column-gap: 0.9rem;
+}
+
+.gridItem {
+  break-inside: avoid;
+  margin-bottom: 0.9rem;
+}
+
+@media (max-width: 900px) {
+  .grid { columns: 2; }
+}
+
+@media (max-width: 540px) {
+  .grid    { columns: 1; }
+  .section { padding: 4rem 0; }
+}
+
+/* ---- Empty state ----------------------------------------- */
+.empty {
+  color: var(--color-text-muted);
+  font-size: 0.9rem;
+  padding: 3rem 0;
+  text-align: center;
+}

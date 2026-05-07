@@ -1,0 +1,96 @@
+/* VideoModal.module.css */
+
+.backdrop {
+  position: fixed;
+  inset: 0;
+  z-index: 200;
+  background: rgba(0, 0, 0, 0.92);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5rem;
+  animation: fadeIn 0.3s var(--ease-out);
+}
+
+.inner {
+  width: 100%;
+  max-width: 980px;
+  animation: scaleIn 0.38s var(--ease-spring);
+}
+
+/* ---- YouTube embed --------------------------------------- */
+.videoWrap {
+  position: relative;
+  padding-top: 56.25%; /* 16:9 */
+  background: #000;
+  border: 1px solid var(--color-border);
+}
+
+.videoWrap iframe {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+/* ---- Meta bar below video -------------------------------- */
+.meta {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 1.2rem 0 0;
+}
+
+.metaLeft { flex: 1; }
+
+.metaCategory {
+  font-size: 0.62rem;
+  font-weight: 400;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  margin-bottom: 0.3rem;
+}
+
+.metaTitle {
+  font-family: var(--font-serif);
+  font-size: 1.55rem;
+  font-weight: 300;
+  color: var(--color-text);
+  margin-bottom: 0.3rem;
+}
+
+.metaDesc {
+  font-size: 0.85rem;
+  color: var(--color-text-muted);
+  font-weight: 300;
+}
+
+/* ---- Close button ---------------------------------------- */
+.closeBtn {
+  flex-shrink: 0;
+  width: 40px;
+  height: 40px;
+  background: transparent;
+  border: 1px solid var(--color-border);
+  color: var(--color-text-muted);
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: border-color 0.3s, color 0.3s;
+  margin-top: 0.2rem;
+}
+
+.closeBtn:hover {
+  border-color: var(--color-border-hover);
+  color: var(--color-text);
+}
+
+@media (max-width: 600px) {
+  .backdrop { padding: 1rem; }
+  .metaTitle { font-size: 1.2rem; }
+}

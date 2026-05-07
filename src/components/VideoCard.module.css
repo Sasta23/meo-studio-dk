@@ -1,0 +1,124 @@
+/* VideoCard.module.css */
+
+.card {
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  border: 1px solid var(--color-border);
+  transition: border-color 0.4s;
+  outline: none;
+}
+
+.card:hover  { border-color: rgba(201, 169, 110, 0.28); }
+.card:focus-visible { outline: 2px solid var(--color-gold); outline-offset: 2px; }
+
+/* ---- Aspect ratio variants ------------------------------- */
+.wide   .imgWrap { padding-top: 56.25%; } /* 16:9 */
+.square .imgWrap { padding-top: 100%;    } /* 1:1  */
+.tall   .imgWrap { padding-top: 133%;    } /* 3:4  */
+
+/* ---- Thumbnail wrapper ----------------------------------- */
+.imgWrap {
+  position: relative;
+  overflow: hidden;
+}
+
+.img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(0.72) saturate(0.85);
+  transition: transform 1.3s var(--ease-out), filter 0.5s;
+}
+
+.card:hover .img {
+  transform: scale(1.07);
+  filter: brightness(0.58) saturate(1);
+}
+
+/* ---- Gradient overlay ------------------------------------ */
+.overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 0.88) 0%,
+    rgba(0, 0, 0, 0.18) 45%,
+    transparent 70%
+  );
+  opacity: 0.72;
+  transition: opacity 0.4s;
+}
+
+.card:hover .overlay { opacity: 1; }
+
+/* ---- Duration badge -------------------------------------- */
+.duration {
+  position: absolute;
+  top: 0.85rem;
+  right: 0.85rem;
+  font-size: 0.62rem;
+  font-weight: 400;
+  letter-spacing: 0.06em;
+  background: rgba(0, 0, 0, 0.62);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 0.22rem 0.6rem;
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+  color: var(--color-text);
+}
+
+/* ---- Play button ----------------------------------------- */
+.play {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0.65);
+  width: 58px;
+  height: 58px;
+  border-radius: 50%;
+  border: 1.5px solid rgba(255, 255, 255, 0.55);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.35s, transform 0.4s var(--ease-spring);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+}
+
+.card:hover .play {
+  opacity: 1;
+  transform: translate(-50%, -50%) scale(1);
+}
+
+/* ---- Bottom info ------------------------------------------ */
+.info {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 1.1rem 1.2rem;
+  transform: translateY(4px);
+  transition: transform 0.4s var(--ease-out);
+}
+
+.card:hover .info { transform: translateY(0); }
+
+.category {
+  font-size: 0.6rem;
+  font-weight: 400;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  margin-bottom: 0.3rem;
+}
+
+.title {
+  font-family: var(--font-serif);
+  font-size: 1.1rem;
+  font-weight: 400;
+  line-height: 1.2;
+  color: var(--color-text);
+}
