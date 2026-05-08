@@ -138,18 +138,17 @@ export default function ContactSection() {
           {/* LEFT SIDE */}
           <div className={`${styles.info} reveal`}>
             <span className="section-eyebrow">
-              Lad os Samarbejde
+              Klar til næste projekt?
             </span>
 
             <h2 className={styles.headline}>
-              Lad os skabe
+              Lad os løfte
               <br />
-              noget{' '}
+              dit brand med{' '}
               <em className={styles.headlineEm}>
-                cinematic
-              </em>
               <br />
-              sammen
+                stærkt content
+              </em>
             </h2>
 
             {/* CONTACT DETAILS */}

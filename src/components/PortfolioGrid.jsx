@@ -26,7 +26,7 @@ export default function PortfolioGrid() {
 
         {/* Section header */}
         <header className={`${styles.header} reveal`}>
-          <span className="section-eyebrow">Udvalgte Arbejder</span>
+          <span className="section-eyebrow">Skabt for Brands</span>
 
           <h2 className={styles.heading}>
             Mit <em className={styles.headingEm}>Portfolio</em>

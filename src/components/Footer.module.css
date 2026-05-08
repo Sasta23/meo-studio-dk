@@ -38,3 +38,16 @@
   color: var(--color-text-muted);
   font-weight: 300;
 }
+.logoWrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.8rem;
+}
+
+.logoIcon {
+  width: 28px;
+  height: 28px;
+  object-fit: contain;
+  opacity: 0.95;
+}

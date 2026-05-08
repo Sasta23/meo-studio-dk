@@ -112,8 +112,8 @@ img, video {
 .section-eyebrow {
   display: inline-block;
   font-family: var(--font-sans);
-  font-size: 0.68rem;
-  font-weight: 400;
+  font-size: 0.88rem;
+  font-weight: 500;
   letter-spacing: 0.28em;
   text-transform: uppercase;
   color: var(--color-gold);

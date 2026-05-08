@@ -96,7 +96,7 @@
   justify-content: center;
   width: 42px;
   height: 42px;
-  border: 1.5px solid var(--color-border);
+  border: px solid var(--color-border);
   font-size: 1.5rem;
   font-weight: 500;
   letter-spacing: 0.06em;
