@@ -8,6 +8,7 @@ import Hero            from './components/Hero';
 import PortfolioGrid   from './components/PortfolioGrid';
 import ContactSection  from './components/ContactSection';
 import Footer          from './components/Footer';
+import TestimonialsSection from './components/TestimonialsSection';
 
 export default function App() {
   // Activates scroll-reveal animations for all `.reveal` elements
@@ -26,6 +27,8 @@ export default function App() {
         <PortfolioGrid />
 
         <div className="divider" />
+
+        <TestimonialsSection />
 
         <ContactSection />
       </main>
