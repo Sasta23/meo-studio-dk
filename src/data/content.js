@@ -68,6 +68,43 @@ export const videos = [
     description: 'SoMe video med dokumenteret resultat på TikTok',
     aspect: 'wide',
   },
+  {
+  id: 'video-004',
+  title: 'Instagram Campaign',
+  category: 'social',
+
+  thumbnail:
+    'https://img.youtube.com/vi/-SAf_R-18T8/maxresdefault.jpg',
+
+  videoUrl:
+    'https://www.youtube.com/embed/-SAf_R-18T8',
+
+  duration: '0:22',
+
+  description:
+    'Short-form video til Instagram kampagne',
+
+  aspect: 'tall',
+},
+
+{
+  id: 'video-005',
+  title: 'Cinematic Reel',
+  category: 'social',
+
+  thumbnail:
+    'https://img.youtube.com/vi/JwWqsACoR3Y/maxresdefault.jpg',
+
+  videoUrl:
+    'https://www.youtube.com/embed/JwWqsACoR3Y',
+
+  duration: '0:18',
+
+  description:
+    'Hafla 50 kroners tilbud med B-Roll',
+
+  aspect: 'tall',
+},
 
   {
     id: 'video-002',
