@@ -118,6 +118,44 @@ export const videos = [
   },
 
   {
+    id: 'video-006',
+    title: 'Åbningsvideo til Hafla Burger',
+    category: 'cinematic',
+
+    thumbnail:
+      'https://img.youtube.com/vi/AZa2D7WKPwE/maxresdefault.jpg',
+
+    videoUrl:
+      'https://www.youtube.com/embed/AZa2D7WKPwE',
+
+    duration: '0:55',
+
+    description:
+      'Short-form content produceret til Hafla Burger og sociale medier',
+
+    aspect: 'tall',
+  },
+
+  {
+    id: 'video-007',
+    title: 'Cinematic Promotional Video',
+    category: 'realestate',
+
+    thumbnail:
+      'https://img.youtube.com/vi/LNKg_bSh8cg/maxresdefault.jpg',
+
+    videoUrl:
+      'https://www.youtube.com/embed/LNKg_bSh8cg',
+
+    duration: '1:11',
+
+    description:
+      'Cinematic promotional video med fokus på engagement og køreskolen',
+
+    aspect: 'tall',
+  },
+
+  {
     id: 'video-003',
     title: 'Fanta Exotic',
     category: 'product',
