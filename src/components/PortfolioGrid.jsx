@@ -29,7 +29,7 @@ export default function PortfolioGrid() {
           <span className="section-eyebrow">Skabt for Brands</span>
 
           <h2 className={styles.heading}>
-            Mit <em className={styles.headingEm}>Portfolio</em>
+            Min <em className={styles.headingEm}>Portfolio</em>
           </h2>
         </header>
 
