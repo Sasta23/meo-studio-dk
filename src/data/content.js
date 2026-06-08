@@ -60,7 +60,7 @@ export const categoryColors = {
 export const videos = [
   {
     id: 'video-001',
-    title: '17.600 visninger på TikTok',
+    title: '20.000 visninger på TikTok',
     category: 'social',
     thumbnail: 'https://img.youtube.com/vi/YW4rChWoXsM/hqdefault.jpg',
     videoUrl: 'https://www.youtube.com/embed/YW4rChWoXsM',
@@ -68,9 +68,20 @@ export const videos = [
     description: 'SoMe video med dokumenteret resultat på TikTok',
     aspect: 'wide',
   },
+  
+  {
+  id: 'video-006',
+  title: 'Marathon event promo',
+  category: 'social',
+  thumbnail: 'https://img.youtube.com/vi/UIEc_BWL9VI/hqdefault.jpg',
+  videoUrl: 'https://www.youtube.com/embed/UIEc_BWL9VI',
+  duration: '0:27',
+  description: 'Event promo Short-form content produceret til sociale medier',
+  aspect: 'tall',
+},
   {
   id: 'video-004',
-  title: 'Instagram Campaign',
+  title: 'Tilbuds Video til Hafla Burger',
   category: 'social',
 
   thumbnail:
@@ -82,14 +93,23 @@ export const videos = [
   duration: '0:22',
 
   description:
-    'Short-form video til Instagram kampagne',
+    'Short-form tilbuds video til sociale medier',
 
   aspect: 'tall',
 },
-
+{
+  id: 'video-007',
+  title: 'Gourmet Værkstedet Leveringsvideo',
+  category: 'cinematic',
+  thumbnail: 'https://img.youtube.com/vi/CZEsZGQYir8/hqdefault.jpg',
+  videoUrl: 'https://www.youtube.com/embed/CZEsZGQYir8',
+  duration: '0:48',
+  description: 'Cinematic produktvideo med fokus på storytelling og engagement',
+  aspect: 'tall',
+},
 {
   id: 'video-005',
-  title: 'Cinematic Reel',
+  title: 'Tilbuds Video til Hafla Burger #2',
   category: 'social',
 
   thumbnail:
