@@ -70,7 +70,7 @@ export const videos = [
   },
   
   {
-  id: 'video-006',
+  id: 'video-009',
   title: 'Marathon event promo',
   category: 'social',
   thumbnail: 'https://img.youtube.com/vi/UIEc_BWL9VI/hqdefault.jpg',
@@ -98,7 +98,7 @@ export const videos = [
   aspect: 'tall',
 },
 {
-  id: 'video-007',
+  id: 'video-008',
   title: 'Gourmet Værkstedet Leveringsvideo',
   category: 'cinematic',
   thumbnail: 'https://img.youtube.com/vi/CZEsZGQYir8/hqdefault.jpg',
